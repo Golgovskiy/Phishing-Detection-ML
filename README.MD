@@ -18,24 +18,35 @@ Both are used and the final answer is combined based on accuracy.
 Multiple models have been tested, and eventually, for the sake of accuracy and speed of inference, two models have been choosen:
 1. RandomForestClassifier (sklearn)
 2. GradientBoostingClassifier (lightgbm)
-Models have been compressed to fit on github.
+Models have been compressed to fit on github. To accelerate inference, either create PhishingDetector object to keep them loaded, or recompress them for yourself.
 ### Metrics
 Main metric measured is f1 (accuracy).
-As models have been trained on different datasets it's hard to estimate final accuracy, but separately^
+As models have been trained on different datasets it's hard to estimate final accuracy, but separately:
 1. RandomForestClassifier accuracy = 0.973847 (97%)
 2. GradientBoostingClassifier accuracy = 95876 (96%)
 ### Issues
 The model might be very slightly biased towards calling bare domain urls as phishing, since a lot of features are exctracted from url. (uncertain)
 ## Usage
-This project uses poetry.
-Clone repository
-Enter root folder with shell
-Create new ENV and install poetry
-Run
+This project uses poetry with python 3.10. You should have python pre-installed.
+1. Clone repository
 ~~~
-poetry install
+git clone https://github.com/Golgovskiy/Phishing-Detection-ML.git <your folder name>
 ~~~
-Then, to run the script, run
+2. Enter root folder with shell or open shell in it
+~~~
+cd <your folder path>
+~~~
+3. Create new VENV
+python -m venv <your_folder_path>\VENV
+4. Install poetry
+~~~
+pip install poetry
+~~~
+5. Then install dependencies
+~~~
+poetry install 
+~~~
+6. Finally, to run the script, run
 ~~~
 poetry run .\phish-detect\src\main.py <your_url>
 ~~~
