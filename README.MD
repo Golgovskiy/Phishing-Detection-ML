@@ -20,12 +20,10 @@ Multiple models have been tested, and eventually, for the sake of accuracy and s
 2. GradientBoostingClassifier (lightgbm)
 Models have been compressed to fit on github. To accelerate inference, either create PhishingDetector object to keep them loaded, or recompress them for yourself.
 ### Metrics
-Main metric measured is f1 (accuracy).
-As models have been trained on different datasets it's hard to estimate final accuracy, but separately:
-1. RandomForestClassifier accuracy = 0.973847 (97%)
-2. GradientBoostingClassifier accuracy = 95876 (96%)
-### Issues
-The model might be very slightly biased towards calling bare domain urls as phishing, since a lot of features are exctracted from url. (uncertain)
+Main metric measured is f1.
+As models have been trained on different datasets, so separately:
+1. RandomForestClassifier f1 score = 0.973847 (97%)
+2. GradientBoostingClassifier f1 score = 95876 (96%)
 ## Usage
 This project uses poetry with python 3.10. You should have python pre-installed.
 1. Clone repository
