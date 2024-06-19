@@ -36,7 +36,7 @@ cd <your folder path>
 ~~~
 3. Create new VENV
 ~~~
-python -m venv <your_folder_path>\VENV
+python -m venv <your_folder_path>\.venv
 ~~~
 4. Install poetry
 ~~~
