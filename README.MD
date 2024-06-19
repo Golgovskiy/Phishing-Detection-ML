@@ -48,7 +48,11 @@ poetry install
 ~~~
 6. Finally, to run the script, run
 ~~~
-poetry run .\phish-detect\src\main.py <your_url>
+poetry run python .\phish-detect\src\main.py <your_url>
+~~~
+To run the API, run 
+~~~
+poetry run python .\phish-detect\src\api.py
 ~~~
 ## References
 The following sources have been reviewed for research:
