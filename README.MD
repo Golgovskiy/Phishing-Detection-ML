@@ -35,7 +35,9 @@ git clone https://github.com/Golgovskiy/Phishing-Detection-ML.git <your folder n
 cd <your folder path>
 ~~~
 3. Create new VENV
+~~~
 python -m venv <your_folder_path>\VENV
+~~~
 4. Install poetry
 ~~~
 pip install poetry
