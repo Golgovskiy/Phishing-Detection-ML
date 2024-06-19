@@ -22,8 +22,8 @@ Models have been compressed to fit on github. To accelerate inference, either cr
 ### Metrics
 Main metric measured is f1.
 As models have been trained on different datasets, so separately:
-1. RandomForestClassifier f1 score = 0.973847 (97%)
-2. GradientBoostingClassifier f1 score = 95876 (96%)
+1. RandomForestClassifier f1 score = 0.974 (97%)
+2. GradientBoostingClassifier f1 score = 0.959 (96%)
 ## Usage
 This project uses poetry with python 3.10. You should have python pre-installed.
 1. Clone repository
