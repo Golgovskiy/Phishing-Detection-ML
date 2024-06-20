@@ -361,7 +361,7 @@ class PhishingDetector:
         
  
 if __name__ == '__main__':
-    parser = ArgumentParser(description='Provide URL, [Optionally, model path]')
+    parser = ArgumentParser(description='Provide URL')
     parser.add_argument('target', type=str, help='Url to check')
     args = parser.parse_args()
     detector = PhishingDetector()
