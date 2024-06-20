@@ -25,7 +25,8 @@ As models have been trained on different datasets, so separately:
 1. RandomForestClassifier f1 score = 0.974 (97%)
 2. GradientBoostingClassifier f1 score = 0.959 (96%)
 ## Usage
-This project uses poetry with python 3.10. You should have python pre-installed.
+This project uses poetry with python 3.10. You should have python pre-installed. Make sure to call all commands from the directory with files after cloning.
+Alternatively, if you have Poetry installed on your main env, it will automatically create it's own venv, so skip steps 2-4. 
 1. Clone repository
 ~~~
 git clone https://github.com/Golgovskiy/Phishing-Detection-ML.git <your folder name>
