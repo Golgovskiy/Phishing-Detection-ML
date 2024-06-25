@@ -1,5 +1,5 @@
 # Phishing detection with machine learning
-## This project is using machine learning methods to test wheather the website is phishing or legitimate.
+## This project is using machine learning methods to test whether the website is phishing or legitimate.
 ## About
 ### Definition
 A phishing website is a common social engineering method that mimics trustful uniform resource locators (URLs) and webpages. 
